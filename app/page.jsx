@@ -19,29 +19,34 @@ export default function Page() {
               HTML, CSS, and JavaScript, I bring ideas to life and push the
               boundaries of web development.
             </p>
-            <Link href="/Contact">
+            <Link href="https://github.com/shashacodes/sharon-s-porfolio">
               <button className="mt-8 px-4 py-2 outline-double hover:outline-offset-4 -skew-x-12 bg-slate-800 text-white  rounded-md">
                 View Github
               </button>
             </Link>
             <Link href={"/About"}>
-              <p className="font-bold md:text-[20px] text-[10px] mt-10">
+              <p className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-10">
                 ______ ABOUT{" "}
               </p>
             </Link>
             <Link href={"/Skills"}>
-              <p className="font-bold md:text-[20px] text-[10px] mt-4">
+              <p className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-4">
                 ______ SKILLS{" "}
               </p>
             </Link>
             <Link href={"/Project"}>
-              <p className="font-bold md:text-[20px] text-[10px] mt-4 ">
+              <p className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-4 ">
                 ______ PROJECT{" "}
               </p>
             </Link>
             <Link href={"/Contact"}>
-              <p className="font-bold md:text-[20px] text-[10px] mt-4 ">
+              <p className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-4 ">
                 ______ CONTACT{" "}
+              </p>
+            </Link>
+            <Link href={"/Resume"}>
+              <p className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-4 ">
+                ______ RESUME{" "}
               </p>
             </Link>
           </div>

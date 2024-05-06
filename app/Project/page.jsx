@@ -1,10 +1,12 @@
+"use client";
+import { Icon } from "@iconify/react";
 import Link from "next/link";
 import React from "react";
 
 export default function Page() {
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div className="bg-white rounded-lg shadow-md p-4">
           <h3>Featured project</h3>
           <Link href="https://mynaijamarket.com/">
