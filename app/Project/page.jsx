@@ -2,11 +2,40 @@
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 import React from "react";
+import ScrollToTop from "react-scroll-to-top";
+import { Script } from "vm";
 
 export default function Page() {
   return (
     <>
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div className="flex  justify-between">
+        <Link href={"/"}>
+          <p className="font-bold animate-pulse hover:scale-95 md:text-[20px] text-[10px] mt-4 ">
+            ______ HOME{" "}
+          </p>
+        </Link>
+        <Link href={"/About"}>
+          <p className="font-bold underline hover:scale-95 md:text-[20px] text-[10px] mt-4">
+            ______ ABOUT{" "}
+          </p>
+        </Link>
+        <Link href={"/Skills"}>
+          <p className="font-bold animate-pulse hover:scale-95 md:text-[20px] text-[10px] mt-4">
+            ______ SKILLS{" "}
+          </p>
+        </Link>
+        <Link href={"/Contact"}>
+          <p className="font-bold underline  hover:scale-95 md:text-[20px] text-[10px] mt-4 ">
+            ______ CONTACT{" "}
+          </p>
+        </Link>
+        <Link href={"/Resume"}>
+          <p className="font-bold animate-pulse hover:scale-95 md:text-[20px] text-[10px] mt-4 ">
+            ______ RESUME{" "}
+          </p>
+        </Link>
+      </div>
+      <div className="grid  grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-3 gap-12">
         <div className="bg-white rounded-lg shadow-md p-4">
           <h3>Featured project</h3>
           <Link href="https://mynaijamarket.com/">
@@ -231,6 +260,13 @@ export default function Page() {
             <p className="text-gray-600">A project with next.js.</p>
           </Link>
         </div>
+        <div style={{ marginTop: "150vh" }} />
+        <ScrollToTop
+          smooth
+          width="40px"
+          style={{ backgroundColor: "black" }}
+          color="white"
+        />
       </div>
     </>
   );

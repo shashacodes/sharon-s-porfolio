@@ -1,22 +1,49 @@
-import React from "react";
+"use client";
+import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
-import Image from "next/image";
+import React from "react";
 
-export default function page() {
+export default function Page() {
   return (
-    <div>
-      <ul className="flex  text-xl md:justify-between justify-between space-x-2 md:space-x-20 md:mr-[30%] ml-[10%] mt-3">
-        <Link href="/">
-          <li className="hover:underline">HOME</li>
-        </Link>
-        <Link href="/About">
-          <li className="hover:underline">ABOUT</li>
-        </Link>
-        <Link href="/Contact">
-          <li className="hover:underline">CONTACT</li>
-        </Link>
-      </ul>
-      <Image src="/n.jpg" alt="cv" width={1000} height={-1} className="mt-10" />
+    <div className="flex">
+      <div>
+        <img src="/assets/m.jpg" alt="Project" height={200} />
+      </div>
+      <div className="ml-4">
+        <div className="flex flex-col justify-center">
+          <Link href={"/"}>
+            <p className="font-bold  hover:scale-95 md:text-[20px] text-[10px] mt-[80%] ">
+              ______ HOME{" "}
+            </p>
+          </Link>
+          <Link href={"/About"}>
+            <p className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-12">
+              ______ ABOUT{" "}
+            </p>
+          </Link>
+          <Link href={"/Skills"}>
+            <p className="font-bold  hover:scale-95 md:text-[20px] text-[10px] mt-12">
+              ______ SKILLS{" "}
+            </p>
+          </Link>
+          <Link href={"/Contact"}>
+            <p className="font-bold  hover:scale-95 md:text-[20px] text-[10px] mt-12 ">
+              ______ CONTACT{" "}
+            </p>
+          </Link>
+          <Link href={"/Project"}>
+            <p className="font-bold  hover:scale-95 md:text-[20px] text-[10px] mt-12 ">
+              ______ PROJECT{" "}
+            </p>
+          </Link>
+          <a href="file:///C:/Users/USER/Downloads/MyCv%20(1).pdf" download>
+            <button className="font-bold hover:scale-95 md:text-[20px] text-[10px] mt-[70%]">
+              Download cv
+              <Icon icon={"ph:download-duotone"} className="ml-6" />
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

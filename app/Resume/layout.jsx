@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Resume",
-  description: "This page contains my resume",
+  description: "My Resumes",
 };
 import React from "react";
 
